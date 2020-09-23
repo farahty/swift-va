@@ -1,0 +1,280 @@
+
+fragment UserInfo on User {
+  id
+  email
+  name
+  gender
+  dob
+  weight
+  userType
+  height
+  createdAt
+  updatedAt
+}
+
+
+mutation createUser($user: CreateDto!) {
+  createUser(user: $user) {
+	...UserInfo
+  }
+}
+
+
+
+
+
+mutation login($email: String!, $password: String!) {
+  login(email: $email, password: $password) {
+	user {
+	  ...UserInfo
+	}
+	accessToken
+	refreshToken
+  }
+}
+
+query me {
+  me {
+	...UserInfo
+  }
+}
+
+mutation updateUser($user: UpdateDto!) {
+  updateUser(user: $user) {
+	...UserInfo
+  }
+}
+
+mutation refreshTokens(
+  $accessToken: String!
+  $refreshToken: String!
+  
+) {
+  refreshTokens(
+	accessToken: $accessToken
+	refreshToken: $refreshToken
+  ){
+	user {
+	  ...UserInfo
+	}
+	accessToken
+	refreshToken
+	
+  }
+}
+
+query questionCount($questionType: String!, $parentQuestion: Float!) {
+  questionCount(questionType: $questionType, parentQuestion: $parentQuestion)
+}
+
+query predict(
+  $systolic: Float!
+  $diastolic: Float!
+  $age_year: Float!
+  $cholesterol: Float!
+  $weight: Float!
+  $height: Float!
+  $gender: Float!
+  $alcohol: Float!
+  $smoke: Float!
+  $glucose: Float!
+  $active: Float!
+) {
+  predict(
+    systolic: $systolic
+    diastolic: $diastolic
+    age_year: $age_year
+    cholesterol: $cholesterol
+    weight: $weight
+    height: $height
+    gender: $gender
+    alcohol: $alcohol
+    smoke: $smoke
+    glucose: $glucose
+    active: $active
+  ) {
+    error
+    message
+  }
+}
+
+query getFirstQuestion {
+  firstQuestions {
+    id
+    code
+    question
+    url
+    parentQuestion
+    questionType
+    description {
+      arabic
+      english
+    }
+    answers {
+      id
+      code
+      answer
+    }
+  }
+}
+
+query getQuestions($answer: Float!) {
+  questions(answer: $answer) {
+    id
+    code
+    question
+    url
+    parentQuestion
+    questionType
+    description {
+      arabic
+      english
+    }
+    answers {
+      id
+      code
+      answer
+    }
+  }
+}
+
+query evaluate($questions: [QADto!]!) {
+  evaluateAnswers(questions: $questions) {
+    id
+    code
+    disease
+    rank
+  }
+}
+
+mutation savePrediction(
+  $questions: [QADto!]!
+  $userProps: SaveUserPropsDto!
+  $diseases: [SaveDiseasesDto!]!
+  $risk: Boolean!
+) {
+  saveEvaluation(
+    questions: $questions
+    userProps: $userProps
+    diseases: $diseases
+    risk: $risk
+  ) {
+    id
+    user {
+      userId
+    }
+    questions {
+      id
+      code
+      question
+    }
+    diseases {
+      id
+      code
+      disease
+    }
+    risk
+    validated
+    validationResult
+  }
+}
+
+query userEvaluation {
+  userEvaluations {
+    id
+    risk
+    validated
+    validationResult
+    user {
+      userId
+      gender
+      age_year
+      weight
+      height
+      alcohol
+      smoke
+      glucose
+      active
+      cholesterol
+      systolic
+      diastolic
+    }
+    createdAt
+    diseases {
+      id
+      code
+      disease
+      rank
+    }
+    questions {
+      id
+      code
+      question
+      answers {
+        id
+        code
+        answer
+      }
+    }
+  }
+}
+
+query doctors {
+  doctors {
+    id
+    code
+    specialization
+    name
+    address
+    telephone
+    mobile
+    city
+    experience
+    openingTime
+    closingTime
+    createdAt
+    updatedAt
+  }
+}
+
+mutation createAppointment($appointment: CreateAppointmentDto!) {
+  createAppointment(appointment: $appointment) {
+    id
+    doctorId
+    userId
+    date
+    time
+    email
+    mobile
+    name
+    createdAt
+    updatedAt
+  }
+}
+
+query userAppointments {
+  appointments {
+    id
+    doctorId
+    userId
+    date
+    time
+    email
+    mobile
+    name
+    createdAt
+    updatedAt
+  }
+}
+
+query diseaseTreatments($diseaseCode: Float!) {
+  diseaseTreatments(diseaseCode: $diseaseCode) {
+    id
+    title
+    summary
+    url
+    diseaseCode
+    createdAt
+    updatedAt
+  }
+}

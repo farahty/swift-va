@@ -7,15 +7,33 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    @EnvironmentObject()
+    var auth : Auth
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            switch auth.state {
+            case .loading,.undetrmined:
+                ProgressView()
+            case .authenticated:
+                Text(auth.user?.email ?? "")
+                Button("logout"){
+                    auth.logout()
+                }
+            case .unauthenticated:
+                LoginView()
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(Auth.shared)
     }
 }
