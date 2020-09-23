@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct ProductsListApp: App {
+struct Application: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(Auth.shared)
+            RootView().environmentObject(Auth.shared)
         }
     }
 }

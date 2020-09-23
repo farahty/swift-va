@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2FA18D1F251A0E5B00CEFDC8"
-               BuildableName = "ProductsList.app"
-               BlueprintName = "ProductsList"
-               ReferencedContainer = "container:ProductsList.xcodeproj">
+               BuildableName = "DST Advisor.app"
+               BlueprintName = "DST Advisor"
+               ReferencedContainer = "container:DST Advisor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2FA18D1F251A0E5B00CEFDC8"
-            BuildableName = "ProductsList.app"
-            BlueprintName = "ProductsList"
-            ReferencedContainer = "container:ProductsList.xcodeproj">
+            BuildableName = "DST Advisor.app"
+            BlueprintName = "DST Advisor"
+            ReferencedContainer = "container:DST Advisor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2FA18D1F251A0E5B00CEFDC8"
-            BuildableName = "ProductsList.app"
-            BlueprintName = "ProductsList"
-            ReferencedContainer = "container:ProductsList.xcodeproj">
+            BuildableName = "DST Advisor.app"
+            BlueprintName = "DST Advisor"
+            ReferencedContainer = "container:DST Advisor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

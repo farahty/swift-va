@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ContentView: View {
+struct RootView: View {
     
     @EnvironmentObject()
     var auth : Auth
@@ -32,8 +32,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(Auth.shared)
+        RootView().environmentObject(Auth.shared)
     }
 }

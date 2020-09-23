@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		2F41047F251A4F980002A37E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA18D53251A1A9700CEFDC8 /* Network.swift */; };
 		2F7FC5D7251BA49C007EF44A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FC5D6251BA49C007EF44A /* Extentions.swift */; };
+		2F7FC5E0251BBB23007EF44A /* query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D42251A116900CEFDC8 /* query.graphql */; };
+		2F7FC5E1251BBB23007EF44A /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D4F251A15A200CEFDC8 /* schema.json */; };
+		2F7FC5E2251BBB23007EF44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D27251A0E5C00CEFDC8 /* Assets.xcassets */; };
+		2F7FC5E3251BBB23007EF44A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D2A251A0E5C00CEFDC8 /* Preview Assets.xcassets */; };
 		2F87537B251A51BB0004806E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F87537A251A51BB0004806E /* Auth.swift */; };
 		2F87537F251A52960004806E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F87537E251A52960004806E /* LoginView.swift */; };
 		2F875382251A854F0004806E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F875381251A854F0004806E /* Config.swift */; };
 		2F87538B251B209A0004806E /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F87538A251B209A0004806E /* KeychainSwift */; };
-		2FA18D24251A0E5B00CEFDC8 /* ProductsListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA18D23251A0E5B00CEFDC8 /* ProductsListApp.swift */; };
-		2FA18D26251A0E5B00CEFDC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA18D25251A0E5B00CEFDC8 /* ContentView.swift */; };
-		2FA18D28251A0E5C00CEFDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D27251A0E5C00CEFDC8 /* Assets.xcassets */; };
-		2FA18D2B251A0E5C00CEFDC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D2A251A0E5C00CEFDC8 /* Preview Assets.xcassets */; };
+		2FA18D24251A0E5B00CEFDC8 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA18D23251A0E5B00CEFDC8 /* Application.swift */; };
+		2FA18D26251A0E5B00CEFDC8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA18D25251A0E5B00CEFDC8 /* RootView.swift */; };
 		2FA18D35251A100100CEFDC8 /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA18D34251A100100CEFDC8 /* ApolloCore */; };
 		2FA18D37251A100100CEFDC8 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA18D36251A100100CEFDC8 /* ApolloSQLite */; };
 		2FA18D39251A100100CEFDC8 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA18D38251A100100CEFDC8 /* ApolloWebSocket */; };
 		2FA18D3B251A100100CEFDC8 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA18D3A251A100100CEFDC8 /* Apollo */; };
 		2FA18D3D251A100100CEFDC8 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA18D3C251A100100CEFDC8 /* ApolloCodegenLib */; };
-		2FA18D43251A116900CEFDC8 /* query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D42251A116900CEFDC8 /* query.graphql */; };
 		2FA18D4C251A146400CEFDC8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA18D4B251A146400CEFDC8 /* API.swift */; };
-		2FA18D50251A15A200CEFDC8 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FA18D4F251A15A200CEFDC8 /* schema.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +32,9 @@
 		2F87537A251A51BB0004806E /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		2F87537E251A52960004806E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2F875381251A854F0004806E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		2FA18D20251A0E5B00CEFDC8 /* ProductsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FA18D23251A0E5B00CEFDC8 /* ProductsListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListApp.swift; sourceTree = "<group>"; };
-		2FA18D25251A0E5B00CEFDC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FA18D20251A0E5B00CEFDC8 /* DST Advisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DST Advisor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA18D23251A0E5B00CEFDC8 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		2FA18D25251A0E5B00CEFDC8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		2FA18D27251A0E5C00CEFDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FA18D2A251A0E5C00CEFDC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FA18D2C251A0E5C00CEFDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2F875381251A854F0004806E /* Config.swift */,
-				2FA18D23251A0E5B00CEFDC8 /* ProductsListApp.swift */,
+				2FA18D23251A0E5B00CEFDC8 /* Application.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -84,6 +84,7 @@
 		2F41047B251A4EAF0002A37E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2FA18D25251A0E5B00CEFDC8 /* RootView.swift */,
 				2F87537E251A52960004806E /* LoginView.swift */,
 			);
 			path = Views;
@@ -108,7 +109,7 @@
 		2FA18D17251A0E5B00CEFDC8 = {
 			isa = PBXGroup;
 			children = (
-				2FA18D22251A0E5B00CEFDC8 /* ProductsList */,
+				2FA18D22251A0E5B00CEFDC8 /* DST Advisor */,
 				2FA18D21251A0E5B00CEFDC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,25 +117,24 @@
 		2FA18D21251A0E5B00CEFDC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FA18D20251A0E5B00CEFDC8 /* ProductsList.app */,
+				2FA18D20251A0E5B00CEFDC8 /* DST Advisor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FA18D22251A0E5B00CEFDC8 /* ProductsList */ = {
+		2FA18D22251A0E5B00CEFDC8 /* DST Advisor */ = {
 			isa = PBXGroup;
 			children = (
 				2F7FC5D5251BA481007EF44A /* Utils */,
 				2F41047B251A4EAF0002A37E /* Views */,
 				2F410476251A4CB10002A37E /* Apollo */,
 				2F875379251A51A60004806E /* ViewModels */,
-				2FA18D25251A0E5B00CEFDC8 /* ContentView.swift */,
 				2F41047A251A4E830002A37E /* App */,
 				2FA18D27251A0E5C00CEFDC8 /* Assets.xcassets */,
 				2FA18D2C251A0E5C00CEFDC8 /* Info.plist */,
 				2FA18D29251A0E5C00CEFDC8 /* Preview Content */,
 			);
-			path = ProductsList;
+			path = "DST Advisor";
 			sourceTree = "<group>";
 		};
 		2FA18D29251A0E5C00CEFDC8 /* Preview Content */ = {
@@ -148,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FA18D1F251A0E5B00CEFDC8 /* ProductsList */ = {
+		2FA18D1F251A0E5B00CEFDC8 /* DST Advisor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FA18D2F251A0E5C00CEFDC8 /* Build configuration list for PBXNativeTarget "ProductsList" */;
+			buildConfigurationList = 2FA18D2F251A0E5C00CEFDC8 /* Build configuration list for PBXNativeTarget "DST Advisor" */;
 			buildPhases = (
 				2FA18D45251A132A00CEFDC8 /* Generate Apollo GraphQL API */,
 				2FA18D1C251A0E5B00CEFDC8 /* Sources */,
@@ -161,7 +161,7 @@
 			);
 			dependencies = (
 			);
-			name = ProductsList;
+			name = "DST Advisor";
 			packageProductDependencies = (
 				2FA18D34251A100100CEFDC8 /* ApolloCore */,
 				2FA18D36251A100100CEFDC8 /* ApolloSQLite */,
@@ -171,7 +171,7 @@
 				2F87538A251B209A0004806E /* KeychainSwift */,
 			);
 			productName = ProductsList;
-			productReference = 2FA18D20251A0E5B00CEFDC8 /* ProductsList.app */;
+			productReference = 2FA18D20251A0E5B00CEFDC8 /* DST Advisor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2FA18D1B251A0E5B00CEFDC8 /* Build configuration list for PBXProject "ProductsList" */;
+			buildConfigurationList = 2FA18D1B251A0E5B00CEFDC8 /* Build configuration list for PBXProject "DST Advisor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -205,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FA18D1F251A0E5B00CEFDC8 /* ProductsList */,
+				2FA18D1F251A0E5B00CEFDC8 /* DST Advisor */,
 			);
 		};
 /* End PBXProject section */
@@ -215,10 +215,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA18D50251A15A200CEFDC8 /* schema.json in Resources */,
-				2FA18D43251A116900CEFDC8 /* query.graphql in Resources */,
-				2FA18D2B251A0E5C00CEFDC8 /* Preview Assets.xcassets in Resources */,
-				2FA18D28251A0E5C00CEFDC8 /* Assets.xcassets in Resources */,
+				2F7FC5E0251BBB23007EF44A /* query.graphql in Resources */,
+				2F7FC5E1251BBB23007EF44A /* schema.json in Resources */,
+				2F7FC5E2251BBB23007EF44A /* Assets.xcassets in Resources */,
+				2F7FC5E3251BBB23007EF44A /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,13 +233,13 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/ProductsList/**/*.graphql",
+				"$(SRCROOT)/DST\\ Advisor/**/*.graphql",
 			);
 			name = "Generate Apollo GraphQL API";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/ProductsList/Apollo/API.swift",
+				"$(SRCROOT)/DST\\ Advisor/Apollo/API.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -254,12 +254,12 @@
 			files = (
 				2F87537F251A52960004806E /* LoginView.swift in Sources */,
 				2F87537B251A51BB0004806E /* Auth.swift in Sources */,
-				2FA18D26251A0E5B00CEFDC8 /* ContentView.swift in Sources */,
+				2FA18D26251A0E5B00CEFDC8 /* RootView.swift in Sources */,
 				2F875382251A854F0004806E /* Config.swift in Sources */,
 				2F7FC5D7251BA49C007EF44A /* Extentions.swift in Sources */,
 				2FA18D4C251A146400CEFDC8 /* API.swift in Sources */,
 				2F41047F251A4F980002A37E /* Network.swift in Sources */,
-				2FA18D24251A0E5B00CEFDC8 /* ProductsListApp.swift in Sources */,
+				2FA18D24251A0E5B00CEFDC8 /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,10 +388,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ProductsList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "DST\\ Advisor/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 95R6A68CW4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ProductsList/Info.plist;
+				INFOPLIST_FILE = "DST Advisor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,10 +410,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ProductsList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "DST\\ Advisor/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 95R6A68CW4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ProductsList/Info.plist;
+				INFOPLIST_FILE = "DST Advisor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,7 +429,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FA18D1B251A0E5B00CEFDC8 /* Build configuration list for PBXProject "ProductsList" */ = {
+		2FA18D1B251A0E5B00CEFDC8 /* Build configuration list for PBXProject "DST Advisor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FA18D2D251A0E5C00CEFDC8 /* Debug */,
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FA18D2F251A0E5C00CEFDC8 /* Build configuration list for PBXNativeTarget "ProductsList" */ = {
+		2FA18D2F251A0E5C00CEFDC8 /* Build configuration list for PBXNativeTarget "DST Advisor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FA18D30251A0E5C00CEFDC8 /* Debug */,
