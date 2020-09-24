@@ -7,28 +7,49 @@
 
 import SwiftUI
 
-
-
 struct RootView: View {
     
     @EnvironmentObject()
     var auth : Auth
+
     
+    @State
+    var currentScreen: AuthState?
     
-    var body: some View {
-        VStack{
-            switch auth.state {
-            case .loading,.undetrmined:
-                ProgressView()
-            case .authenticated:
-                Text(auth.user?.email ?? "")
-                Button("logout"){
-                    auth.logout()
-                }
-            case .unauthenticated:
-                LoginView()
+    var authScreen: some View {
+        VStack {
+            Text(auth.user?.email ?? "")
+            Button("logout"){
+                auth.logout()
             }
         }
+    }
+    
+    var progressScreen: some View {
+        ProgressView()
+    }
+    
+    
+    var loginScreen: some View {
+        LoginView()
+    }
+    
+    var body: some View {
+        
+        NavigationView{
+            
+            
+                
+                if auth.state == .authenticated {
+                    authScreen
+                }else if auth.state == AuthState.unauthenticated {
+                    loginScreen
+                } else {
+                    progressScreen
+                }            
+        }
+        
+        
     }
 }
 

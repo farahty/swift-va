@@ -24,7 +24,7 @@ struct LoginView: View {
         NavigationView{
             Form {
                 TextField("Email Address", text: $loginVm.email)
-                TextField("Passowrd", text: $loginVm.password)
+                SecureField("Passowrd", text: $loginVm.password)
                 HStack{
                     Spacer()
                     Button("Login"){

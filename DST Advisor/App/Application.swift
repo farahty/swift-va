@@ -11,7 +11,9 @@ import SwiftUI
 struct Application: App {
     var body: some Scene {
         WindowGroup {
-            RootView().environmentObject(Auth.shared)
+            RootView()
+                .environmentObject(Auth.shared)
+                .environment(\.locale, .init(identifier: "ar"))
         }
     }
 }
